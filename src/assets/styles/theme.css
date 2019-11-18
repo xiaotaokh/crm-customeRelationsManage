@@ -1,0 +1,243 @@
+/*
+ * 定制element-ui的样式文件
+ */
+
+.el-dropdown-menu--small .el-dropdown-menu__item {
+  padding: 0 30px;
+  line-height: 32px;
+}
+
+.el-popper[x-placement^=bottom]{
+  margin-top: 8px;
+}
+
+.header .user .item.user-info .el-dropdown .el-dropdown-link{
+  font-size: 13px;
+}
+
+.el-popover{
+  padding: 4px 12px;
+}
+
+/*form*/
+.el-form.app-form-clear-margin-bottom{
+  margin-bottom: -18px;
+}
+
+.el-form-item__label{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.el-form-item--mini.el-form-item, .el-form-item--small.el-form-item {
+  margin-bottom: 18px;
+  margin-right: 30px;
+}
+
+/*radio*/
+.el-radio__label {
+  font-weight: 400;
+}
+
+/*select*/
+.el-select-dropdown__item{
+  font-size: 13px;
+}
+
+.el-form--inline .el-select {
+  width: 200px;
+}
+
+/*table*/
+.el-table--border, .el-table--group{
+  border: none;
+}
+
+.el-table--small th {
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333333;
+  font-weight: normal;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+}
+
+.el-table--small td{
+  padding: 0;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+  font-size: 13px;
+  text-align: left;
+}
+
+.el-table--border::after, .el-table--group::after{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.el-table--border td .table-column-operate-btn {
+  text-align: left;
+}
+
+.el-date-editor .el-range-separator {
+  width: 20px;
+}
+
+.el-table .cell{
+  font-size: 13px;
+}
+
+.el-table .cell .operation-line{
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #dedede;
+  position: relative;
+  top: 2px;
+  margin: 0 12px;
+}
+
+.el-table .cell .text-color-red{
+  color: #f01011;
+}
+
+.el-table .cell .text-color-blue{
+  color: #3b9ef1;
+}
+
+.el-table .cell .text-color-green{
+  color: #8dbc38;
+}
+
+.el-table .cell .el-button.is-disabled {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+}
+
+.el-table .path-column .cell .name-wrapper{
+  word-break: normal;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/*tab*/
+.el-tabs__header {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  padding: 0 15px;
+  margin: 0 0 20px;
+}
+
+.el-tabs__nav-wrap::after {
+  height: 0px;
+}
+
+/*tiptop*/
+.el-tooltip__popper.is-dark{
+  /*background: #f65555;*/
+}
+
+.el-tooltip__popper[x-placement^="right"] .popper__arrow{
+  /*border-right-color: #f65555;*/
+}
+
+/*dialog*/
+.el-dialog{
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.el-dialog__header{
+  width: 101%;
+  padding: 10px 20px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  font-size: 13px;
+  background: -webkit-linear-gradient(left, #3980cb , #10549c); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #3980cb , #10549c); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #3980cb , #10549c); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #3980cb , #10549c); /* 标准的语法（必须放在最后） */
+  overflow: hidden;
+  text-align: left;
+}
+
+.el-dialog__title{
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.el-dialog__headerbtn{
+  top: 13px;
+}
+
+.el-dialog__headerbtn .el-dialog__close{
+  color: #ffffff;
+}
+
+.el-dialog__body{
+  padding: 30px 40px;
+}
+
+.el-dialog__footer{
+  border-top: 1px solid #ebebeb;
+  padding: 10px;
+}
+
+.el-dialog__wrapper.edit-dialog .el-dialog__footer,
+.el-dialog__wrapper.del-dialog .el-dialog__footer,
+.el-dialog__wrapper.del-batch-dialog .el-dialog__footer {
+  padding: 10px;
+}
+
+.el-dialog .el-select {
+  width: 100%;
+}
+
+/*时间日期选择*/
+.el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 100%;
+}
+
+.el-date-table td.disabled div {
+  background-color: #e2e2e2;
+  color: #91949a;
+}
+
+.el-date-table td.in-range div, .el-date-table td.in-range div:hover, .el-date-table.is-week-mode .el-date-table__row.current div, .el-date-table.is-week-mode .el-date-table__row:hover div {
+  background-color: #e5eefb;
+}
+
+/*button*/
+.el-button--warning {
+  color: #fff;
+  background-color: #f16e1f;
+  border-color: #f16e1f;
+}
+
+.el-button--warning:focus, .el-button--warning:hover {
+  background: #f07e38;
+  border-color: #f07e38;
+  color: #fff;
+}
+
+.el-button--small, .el-button--small.is-round{
+  position: relative;
+  top: -1px;
+}
+
+/*面包屑*/
+.el-breadcrumb{
+  margin-bottom: 20px;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__inner{
+  color: #3d9df4;
+}
+
+.el-breadcrumb__inner a, .el-breadcrumb__inner.is-link{
+  font-weight: normal;
+}
